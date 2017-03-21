@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Hello Friend!</title>
+      <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Fill in the hour and the minutes!</h1>
+        <form action='/display'>
+          <div class="form-group">
+            <label for="hour">Hour</label>
+            <input id="hour" name="hour" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="minute">Minute</label>
+            <input id="minute" name="minute" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Go!</button>
+        </form>
+        <div>
+          <%= @angle%>
+        </div>
+      </div>
+    </body>
+  </html>
